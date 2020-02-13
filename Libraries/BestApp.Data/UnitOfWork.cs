@@ -54,7 +54,7 @@ namespace Repository.Pattern
             }
 
             var type = typeof(TEntity).Name;
-
+             
             if (Repositories.ContainsKey(type))
             {
                 return (IRepositoryAsync<TEntity>)Repositories[type];
