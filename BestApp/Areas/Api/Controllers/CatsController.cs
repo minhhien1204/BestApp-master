@@ -14,7 +14,7 @@ namespace BestApp.Areas.Api.Controllers
 {
     public class CatsController : ODataController
     {
-        private readonly ICatService _customerService;  //coi lại chỗ này 
+        private readonly ICatService _customerService;  //coi lại chỗ này  
         private readonly IUnitOfWorkAsync _unitOfWorkAsync; 
 
         public CatsController(ICatService customerService, IUnitOfWorkAsync unitOfWorkAsync)
